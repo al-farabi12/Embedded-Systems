@@ -1,0 +1,1 @@
+gcc 4_21.c -o start -lm -pthread

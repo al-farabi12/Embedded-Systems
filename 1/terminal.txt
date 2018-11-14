@@ -1,0 +1,16 @@
+i2cdetect -l
+
+i2cdetect -y -r 1
+
+cat modalias
+
+i2cdump -y 1 0x1e
+
+i2cdump -y 1 x6b
+
+
+
+https://github.com/DavidEGrayson/minimu9-ahrs.git
+
+
+

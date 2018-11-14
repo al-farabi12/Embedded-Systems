@@ -1,0 +1,41 @@
+#include <pthread.h>
+#include <stdio.h>
+#include <time.h>
+
+
+unsigned long sum[4];
+
+
+
+void *thread_fn(void *arg) {
+  long id = (long) arg;
+  int start = id * 2500000;
+  int i = 0;
+  
+  while(i<2500000) {
+    sum[id] += (i +  start);
+    i++;
+  }
+  return NULL;
+}
+
+
+int main() {
+
+  clock_t tic = clock();
+
+  pthread_t t1,t2,t3,t4;
+  pthread_create(&t1, NULL, thread_fn, (void*)0);
+  pthread_create(&t2, NULL, thread_fn, (void*)1);
+  pthread_create(&t3, NULL, thread_fn, (void*)2);
+  pthread_create(&t4, NULL, thread_fn, (void*)3);
+  pthread_join(t[0], NULL);
+  pthread_join(t[1], NULL);
+  pthread_join(t[2], NULL);
+  pthread_join(t[3], NULL);
+
+  clock_t toc = clock();
+  printf("Elapsed: %f seconds\n", (double)(toc - tic) / CLOCKS_PER_SEC);
+
+  printf("%lu\n",sum[0]+sum[1]+sum[2]+sum[3] );
+}

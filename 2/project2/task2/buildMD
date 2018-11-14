@@ -1,0 +1,4 @@
+#!/bin/bash
+
+
+g++ ggMD.cpp SocketServer.cpp SocketClient.cpp  -std=c++0x 

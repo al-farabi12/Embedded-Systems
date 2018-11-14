@@ -1,0 +1,94 @@
+L3GD20H   GYROSCOPE
+0x6b
+	ADD   ADD        D e f a u l t         Current 	 Control 
+        HEX   BINARY     HEX  BINARY            HEX   	   Hex
+CTRL1    20 = 010 0000   07 = 00000111          7          0x0F
+CTRL2    21 = 010 0001   00 = 00000000          0          0x20
+
+
+
+
+
+
+LSM303D  ACCELEROMETER and MAGNETOMETER
+0x1d
+
+	ADD   ADD        D e f a u l t         Current 	  Control 
+        HEX   BINARY     HEX  BINARY            HEX   	   Hex
+CTRL1   20 =  010 0000   07 = 00000111          07	   0x57
+CTRL2   21 =  010 0001   00 = 00000000          00    	   0x18
+CTRL5   24 =  010 0100   18 = 00011000          18	   0x64
+CTRL6   25 =  010 0101   20 = 00100000          20	   0x20
+CTRL7   26 =  010 0110   01 = 00000001          03	   0x00
+
+
+const char* TEMP_OUT_L  =" 0x05";
+const char* TEMP_OUT_H  =" 0x06";
+
+const char* STATUS_M   =" 0x07";
+
+const char* D_OUT_X_L_M=" 0x08";
+const char* D_OUT_X_H_M=" 0x09";
+const char* D_OUT_Y_L_M=" 0x0A";
+const char* D_OUT_Y_H_M=" 0x0B";
+const char* D_OUT_Z_L_M=" 0x0C";
+const char* D_OUT_Z_H_M=" 0x0D";    
+const char* WHO_AM_I   =" 0x0F";
+
+const char* INT_CTRL_M =" 0x12";
+const char* INT_SRC_M  =" 0x13";
+const char* INT_THS_L_M=" 0x14";
+const char* INT_THS_H_M=" 0x15";
+
+const char* OFFSET_X_L_M  =" 0x16";
+const char* OFFSET_X_H_M  =" 0x17";
+const char* OFFSET_Y_L_M  =" 0x18";
+const char* OFFSET_Y_H_M  =" 0x19";
+const char* OFFSET_Z_L_M  =" 0x1A";
+const char* OFFSET_Z_H_M  =" 0x1B";
+
+const char* REFERENCE_X   =" 0x1C";
+const char* REFERENCE_Y   =" 0x1D";
+const char* REFERENCE_Z   =" 0x1E";
+
+const char* CTRL0   =" 0x1F";
+const char* CTRL1   =" 0x20";
+const char* CTRL2   =" 0x21";
+const char* CTRL3   =" 0x22";
+const char* CTRL4   =" 0x23";
+const char* CTRL5   =" 0x24";
+const char* CTRL6   =" 0x25";
+const char* CTRL7   =" 0x26";
+
+const char* STATUS_A   =" 0x27";
+      
+const char* OUT_X_L_A  =" 0x28";
+const char* OUT_X_H_A  =" 0x29";
+const char* OUT_Y_L_A  =" 0x2A";
+const char* OUT_Y_H_A  =" 0x2B";
+const char* OUT_Z_L_A  =" 0x2C";
+const char* OUT_Z_H_A  =" 0x2D";
+
+const char* FIFO_CTRL  =" 0x2E";
+const char* FIFO_SRC   =" 0x2F";
+
+const char* IG_CFG1    =" 0x30";
+const char* IG_SRC1    =" 0x31";
+const char* IG_THS1    =" 0x32";
+const char* IG_DUR1    =" 0x33";
+const char* IG_CFG2    =" 0x34";
+const char* IG_SRC2    =" 0x35";
+const char* IG_THS2    =" 0x36";
+const char* IG_DUR2    =" 0x37";
+
+const char* CLICK_CFG  =" 0x38";
+const char* CLICK_SRC  =" 0x39";
+const char* CLICK_THS  =" 0x3A";
+
+const char* TIME_LIMIT    =" 0x3B";
+const char* TIME_LATENCY  =" 0x3C";
+const char* TIME_WINDOW   =" 0x3D";
+
+const char*  Act_THS  =" 0x3E";
+const char*  Act_DUR  =" 0x3F";
+//my code ends here

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+
+g++ gg.cpp -std=c++0x 
